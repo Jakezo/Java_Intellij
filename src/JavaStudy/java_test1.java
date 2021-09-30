@@ -1,13 +1,24 @@
 package JavaStudy;
 
+import java.util.Arrays;
+
 public class java_test1 {
 
     public static void main(String[] args) {
 
-        String ww = "123,33";
+        int arr[] = {4,23,33,15,17,19};
+        int mm[] ;
+        mm = arr;
 
-    String vv=    ww.replaceAll(System.getProperty("line.separator"),"").replace(",","");
+        Arrays.sort(arr);
 
-        System.out.println(vv);
+        for (int i : arr) {
+            System.out.print("["+i+"]");
+        }
+        System.out.println();
+        for (int z : mm) {
+            System.out.print("["+z+"]");
+        }
     }
+
 }
