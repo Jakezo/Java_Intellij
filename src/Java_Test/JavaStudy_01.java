@@ -1,4 +1,4 @@
-package JavaStudy;
+package Java_Test;
 
 public class JavaStudy_01 {
     public static void main(String[] args) {
