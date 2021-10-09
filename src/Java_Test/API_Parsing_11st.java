@@ -109,7 +109,5 @@ public class API_Parsing_11st {
         }catch(Exception e) {
             System.out.println(e.getMessage());
         }
-
-
     }
 }

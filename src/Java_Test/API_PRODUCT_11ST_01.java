@@ -48,16 +48,16 @@ public class API_PRODUCT_11ST_01 {
             System.out.println("Root element :  "+doc.getDocumentElement().getNodeName());
 
             // Category 태그로 묶여진 데이터들을 전부 가져온다
-            NodeList nList = doc.getElementsByTagName("Category");
+            NodeList nList = doc.getElementsByTagName("Product");
             System.out.println("개수:"+nList.getLength());
             for(int temp = 0; temp < nList.getLength(); ++temp) {
                 Node nNode = nList.item(temp);
                 if(nNode.getNodeType() == Node.ELEMENT_NODE){
                     Element eElement = (Element) nNode;
                     System.out.println(temp+"번째");
-                    System.out.println("CategoryName:"+getValue("CategoryName",eElement));
-                    System.out.println("CategoryUrl:"+getValue("CategoryUrl",eElement));
-                    System.out.println("카테고리별 갯수:"+getValue("CategoryPrdCnt",eElement));
+                    System.out.println("abrdBuyPlace:"+getValue("abrdBuyPlace",eElement));
+                    System.out.println("selMthdCd:"+getValue("selMthdCd",eElement));
+                    System.out.println("dispCtgrNo:"+getValue("dispCtgrNo",eElement));
                 }
             }
         } catch (Exception e) {
@@ -69,39 +69,36 @@ public class API_PRODUCT_11ST_01 {
     }
     public static void main(String[] args) {
         BufferedReader br = null;
+        String urlstr="http://api.11st.co.kr/rest/prodservices/product";
+        String openapikey ="gty457h547rtyd456h78gy7456h758r5";
+
+        StringBuffer buffer = new StringBuffer("<?xml version=\"1.0\" encoding=\"EUC-KR\"?>");
+        buffer.append("<Product>");
+        buffer.append("<abrdBuyPlace>B</abrdBuyPlace>"); //너무 많아서 생략
+        buffer.append("<selMthdCd>01</selMthdCd>");
+        buffer.append("<dispCtgrNo>1010294</dispCtgrNo>");
+        buffer.append("<prdTypCd>01</prdTypCd>");
+        buffer.append("</Product>");
+        StringBuilder sb = new StringBuilder();
         try {
-            String urlstr="http://api.11st.co.kr/rest/prodservices/product";
-            String openapikey ="gty457h547rtyd456h78gy7456h758r5";
-
-
             URL url = new URL(urlstr);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
-
             con.setConnectTimeout(5000); //서버에 연결되는 Timeout 시간 설정
             con.setReadTimeout(5000); // InputStream 읽어 오는 Timeout 시간 설정
-
             con.setRequestMethod("POST");
 
             //URLConnection에 대한 doOutput 필드값을 지정된 값으로 설정한다. URL 연결은 입출력에 사용될 수 있다.
             // URL 연결을 출력용으로 사용하려는 경우 DoOutput 플래그를 true로 설정하고, 그렇지 않은 경우는 false로 설정해야 한다. 기본값은 false이다.
-
             con.setDoOutput(false);
+//            HttpClient httpclient = new HttpClient(); 디펜던시 추가
 
-            StringBuffer buffer = new StringBuffer("<?xml version=\"1.0\" encoding=\"EUC-KR\"?>");
-
-            StringBuilder sb = new StringBuilder();
             if (con.getResponseCode() == HttpURLConnection.HTTP_OK) {
                 //Stream을 처리해줘야 한다.
                 BufferedReader br2 = new BufferedReader(
                         new InputStreamReader(con.getInputStream(), "EUC-KR"));  // xml 은 EUC-KR 로 인코딩
                 String line;
                 while ((line = br2.readLine()) != null) {
-                    buffer.append("<Product>");
-                    buffer.append("<abrdBuyPlace>B</abrdBuyPlace>"); //너무 많아서 생략
-                    buffer.append("<selMthdCd>01</selMthdCd>");
-                    buffer.append("<dispCtgrNo>1010294</dispCtgrNo>");
-                    buffer.append("<prdTypCd>01</prdTypCd>");
-                    buffer.append("</Product>");
+
                     buffer.append(line).append("\n");
                 }
                 br2.close();

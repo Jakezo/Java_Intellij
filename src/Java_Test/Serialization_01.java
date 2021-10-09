@@ -6,9 +6,12 @@ import java.io.Serializable;
 import java.util.Base64;
 
 class Member implements Serializable {
+    private static final long serialVersionUID = 1L;  // 이것이 id로 식별자 역할을 한다.
     private String name;
     private String email;
     private int age;
+    private int additionalField;
+    private int additionalField2;
 
     public Member(String name, String email, int age) {
         this.name = name;
@@ -30,7 +33,7 @@ public class Serialization_01 {
     }
 
     private static String serialize() {
-        Member member = new Member("goodDabang", "wsh0821@station3.co.kr", 27);
+        Member member = new Member("jakezo", "laidback.co.kr", 99);
         byte[] serializedMember;
         String serializedMemberStr = "";
         try (ByteArrayOutputStream baos = new ByteArrayOutputStream()) {
