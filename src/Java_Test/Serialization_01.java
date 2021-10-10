@@ -18,7 +18,6 @@ class Member implements Serializable {
         this.email = email;
         this.age = age;
     }
-
     @Override
     public String toString() {
         return String.format("Member{name='%s', email='%s', age='%s'}", name, email, age);
