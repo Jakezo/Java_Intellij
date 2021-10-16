@@ -23,5 +23,9 @@ public class TvTest2 {
         Tv t2 = new Tv(); //
         System.out.println("t1의 cannel 값은" + t1.channel +"입니다.");
         t1.channel = 1;
+
+        int a = (int)Math.sqrt(4.0);
+        System.out.println(a);
+
     }
 }
