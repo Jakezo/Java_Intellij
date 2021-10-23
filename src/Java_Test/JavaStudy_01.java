@@ -18,7 +18,7 @@ public class JavaStudy_01 {
         }
 
         for(int i=0; i<10; i++){
-            System.out.println((i+1)+"번째 로또번호" +  ball[i]);
+            System.out.println((i+1)+"번째 로또번호 " +  ball[i]);
         }
     }
 }
