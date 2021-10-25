@@ -5,18 +5,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class CoUp_No_1089_2 {
+public class CoUp_1090_2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
         int a = Integer.parseInt(st.nextToken());
-        int d = Integer.parseInt(st.nextToken());
+        int r = Integer.parseInt(st.nextToken());
         int n = Integer.parseInt(st.nextToken());
 
-        a += d*(n-1);
+        a*=Math.pow(r, (n-1));
 
         System.out.println(a);
-
         br.close();
     }
 }
