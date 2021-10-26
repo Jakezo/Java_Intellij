@@ -16,9 +16,12 @@ public class Pra_StringTokenizer {
             System.out.println("tok2 token >>> " + tokenizer2.nextToken());
         }
 
-        StringTokenizer tokenizer3 = new StringTokenizer(source," ",true);
+        StringTokenizer tokenizer3 = new StringTokenizer(source," ",false);
+        // 지정한 쪼갤 문자열도 포함할지 하는게 true false
         while (tokenizer3.hasMoreTokens()){
             System.out.println("tok3 token>>>>>" + tokenizer3.nextToken());
+
+
         }
 
 

@@ -15,11 +15,11 @@ public class CoUp_1092_2 {
         int c = Integer.parseInt(st.nextToken());
 
         // 일반 수학 공배수
-
         int com = 1;
         while(com%a!=0 || com%b!=0 || com%c !=0){
             com ++;
         }
+
         System.out.println(com);
         br.close();
 
