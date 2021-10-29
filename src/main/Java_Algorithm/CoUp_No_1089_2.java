@@ -15,7 +15,7 @@ public class CoUp_No_1089_2 {
 
         a += d*(n-1);
 
-        System.out.println(a);
+        System.out.println(a+d);
 
         br.close();
     }
