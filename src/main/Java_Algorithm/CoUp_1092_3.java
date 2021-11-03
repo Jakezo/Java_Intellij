@@ -34,9 +34,7 @@ public class CoUp_1092_3 {
                 common++;
                 continue;
             }
-
             // 특정수의 공약수 일때 공약수를 list 저장하고 해당 숫자를 공약수로 나눈 값으로 바꾸기
-
             if(blA && blB && blC){
                 a /= common;
                 b /= common;
