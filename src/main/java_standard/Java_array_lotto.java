@@ -1,6 +1,6 @@
 package java_standard;
 
-public class java_array_lotto  {
+public class Java_array_lotto {
     public static void main(String[] args) {
 
         int[] ball = new int[45];

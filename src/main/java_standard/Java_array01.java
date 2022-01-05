@@ -1,6 +1,6 @@
 package java_standard;
 
-public class java_array01 {
+public class Java_array01 {
 
     public static void main(String[] args) {
 

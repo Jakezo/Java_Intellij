@@ -1,6 +1,6 @@
 package java_standard;
 
-public class java_overloading {
+public class Java_overloading {
     public static void main(String[] args) {
         MyMath3 m3 = new MyMath3();
         System.out.println("m3.add(3,3)결과:" + m3.add(3,3) );
