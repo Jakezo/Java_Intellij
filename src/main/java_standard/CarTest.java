@@ -23,7 +23,7 @@ public class CarTest {
     public static void main(String[] args) {
         Car c1 = new Car();
         c1.color = "white";
-        c1.gearType = "auto";
+        c1.gearType = "autoCar";
         c1.door = 4;
 
         Car c2 = new Car("black","d",5);
