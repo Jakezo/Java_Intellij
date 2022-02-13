@@ -15,7 +15,7 @@ class Car {
 
     Car(String color){
       //  door = 5;
-        this(color,"aut22o",4);
+        this(color,"aut22os",4);
     }
 }
 
