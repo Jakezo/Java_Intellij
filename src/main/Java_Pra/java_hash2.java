@@ -44,6 +44,7 @@ class HashTable {
     void put(String key,String value ){
         int hashcode = getHashCode(key);
         int index = convertToIndex(hashcode);
+        System.out.println(key +", hashcode(" + hashcode + "), index(" + index + ")");
         LinkedList<Node> list = data[index];
         if(list == null){
             list = new LinkedList<Node>();
@@ -71,6 +72,7 @@ public class java_hash2 {
         h.put("jake","coding master");
         h.put("you","youruru");
         h.put("ra","GGGet Sum ");
+        h.put("jake","you are good ");
         System.out.println(h.get("sung"));
         System.out.println(h.get("jake"));
         System.out.println(h.get("you"));
