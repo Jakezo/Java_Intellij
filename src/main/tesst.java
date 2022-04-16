@@ -15,15 +15,17 @@ public class tesst {
         StringTokenizer st = new StringTokenizer(br.readLine()," ");
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+
         Double num1 = Double.parseDouble(st.nextToken());
         Double num2 = Double.parseDouble(st.nextToken());
 
         // 소수 둘째자리까지 표현하기 위한 format
 
-        bw.append(String.format("%.2f", num1*num2));
+        bw.append(String.format("%.1f", num1*num2));
         bw.flush();
         bw.close();
         br.close();
+
 
 
     }
