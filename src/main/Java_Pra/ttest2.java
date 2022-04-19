@@ -28,7 +28,7 @@ public class ttest2 {
 
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int[] hailLengths = new int[100000000]; //우박수으 길이 관련 배열
+        int[] hailLengths = new int[100000000]; //우박수의 길이 관련 배열
 
         System.out.println("a>>"+a);
 

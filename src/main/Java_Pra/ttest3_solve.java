@@ -9,6 +9,7 @@ public class ttest3_solve{
     public static void recur(HashMap <Double, Double> dp, double n){
         len++;
         if(dp.containsKey(n)){
+            System.out.print("엔"+n+" ");
             System.out.println(dp.get(n));
             len += (dp.get(n)-1);
             return;
@@ -34,14 +35,14 @@ public class ttest3_solve{
             len = 0;
             recur(dp, i);
             dp.put(i, len);
-            System.out.println(dp);
+            System.out.println("dp"+dp+" i:"+i);
             if(len > max) {
                 max = len;
                 ck = i;
             }
         }
 
-        System.out.println(String.format("%.0f", ck) + " " + String.format("%.0f", max));
+        System.out.println(String.format("%.0f", ck) + ">> " + String.format("%.0f", max));
 
     }
 }
