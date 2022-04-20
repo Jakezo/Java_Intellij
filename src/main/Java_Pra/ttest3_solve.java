@@ -12,6 +12,7 @@ public class ttest3_solve{
             System.out.print("엔"+n+" ");
             System.out.println(dp.get(n));
             len += (dp.get(n)-1);
+            System.out.println("렌 "+len);
             return;
         }
         if(n == 1){
