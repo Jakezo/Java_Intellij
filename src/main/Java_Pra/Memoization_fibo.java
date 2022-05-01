@@ -14,6 +14,6 @@ public class Memoization_fibo {
 
     public static void main(String[] args) {
         memo = new long[101];
-        System.out.println(fibonacci(100));
+        System.out.println(fibonacci(99));
     }
 }
