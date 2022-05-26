@@ -10,7 +10,7 @@ public class test_1287_1 {
         StringBuilder sb = new StringBuilder();
         int dan = Integer.parseInt(br.readLine());
 
-        //구구단은 1부터 9까지의 for 문을 반복
+        //구구단은 1부터 9까지의 for 문을반복
         for(int i=1; i<10; i++){
             for(int j=1; j<=dan*i; j++){
                // System.out.print("*");
