@@ -32,9 +32,6 @@ public class test_1476_2 {
         System.out.println(sb);
         br.close();
 
-
-
-
         System.out.println();
     }
 }
