@@ -23,21 +23,21 @@ import java.util.StringTokenizer;
 public class test_1673_1 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int num1 = Integer.parseInt(st.nextToken());
         int num2 = Integer.parseInt(st.nextToken());
         int num3 = Integer.parseInt(st.nextToken());
 
-        int[] ss = {num1, num2, num3};
 
-        for(int i=1; i<ss.length; i++){
-            if(num1 > ss[i]){
-                num1 = ss[i];
+        for(int i=num1; i>0; i--){
+            if(num1%i==0 && num2%i==0 && num3%i==0){
+                System.out.println(i);
+                break;
             }
         }
-        System.out.println(num1);
+
+        br.close();
 
     }
 }
