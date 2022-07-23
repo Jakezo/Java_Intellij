@@ -12,7 +12,7 @@ public class test_1274_1 {
         // 먼저 소수라고 초기화
         boolean isPrime = true;
 
-        // n/2 까지 for문 반복 => 약수는 1을 제외하고 2가 ㅗ치소약수
+        // n/2 까지 for문 반복 => 약수는 1을 제외하고 2가 최소약수
         // 2부터 시작해야한다.
         for(int i=2; i<=n/2; i++){
             if(n%i ==0){
