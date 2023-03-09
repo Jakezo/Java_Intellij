@@ -3,7 +3,7 @@ package Java_Inflearn;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Study_4_2 {
     public ArrayList<String> solution(int n ,String[] str){
         ArrayList<String> answer = new ArrayList<>();
         for(String x:str){
@@ -25,7 +25,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        Study_4_2 T = new Study_4_2();
         Scanner sc = new Scanner(System.in);
         int cnt = sc.nextInt();
         String[] str = new String[cnt];
