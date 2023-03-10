@@ -17,7 +17,6 @@ public class Study_2_1 {
         }
         return answer;
     }
-
     public static void main(String[] args) {
         Study_2_1 T = new Study_2_1();
         Scanner kb = new Scanner(System.in);
