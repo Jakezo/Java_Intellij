@@ -29,12 +29,14 @@ import java.util.Scanner;
 
 public class Study_6 {
     public String solution(String str){
-        String answer="YES";
-        str=str.toLowerCase();
+        String answer="NO";
+     /*   str=str.toLowerCase();
         int len=str.length();
         for(int i=0; i<len/2; i++){
             if(str.charAt(i)!=str.charAt(len-i-1)) answer="NO";
-        }
+        }*/
+        String tmp = new StringBuilder(str).reverse().toString();
+        if(str.equalsIgnoreCase(tmp)) answer="YES"; // 대소문자 무시 케이스
 
         return answer;
     }
