@@ -20,9 +20,7 @@ package Java_Inflearn;
 //예시 입력 1
 //
 //gooG
-//예시 출력 1
-//
-//YES
+//예시 출력 1//YES
 
 import java.util.Locale;
 import java.util.Scanner;
