@@ -28,6 +28,7 @@ import java.util.Scanner;
 public class Study_6 {
     public String solution(String str){
         String answer="NO";
+         
      /*   str=str.toLowerCase();
         int len=str.length();
         for(int i=0; i<len/2; i++){
