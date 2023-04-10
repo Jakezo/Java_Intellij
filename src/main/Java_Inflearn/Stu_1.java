@@ -13,7 +13,6 @@ public class Stu_1 {
         return answer;
     }
 
-
     public static void main(String[] args) {
         Stu_1 T = new Stu_1();
         Scanner kb = new Scanner(System.in);
