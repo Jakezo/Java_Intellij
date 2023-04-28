@@ -2,7 +2,7 @@ package Java_Inflearn;
 
 import java.util.Scanner;
 
-public class Main {
+public class Study_13 {
 
     public int solution(int[] arr){
         int tmp=arr[0];
@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
         
-        Main kb = new Main();
+        Study_13 kb = new Study_13();
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         int[] nums=new int[num]; 
