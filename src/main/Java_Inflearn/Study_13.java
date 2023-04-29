@@ -13,7 +13,6 @@ public class Study_13 {
                 count++;
             }
         }        
-        
         return count;
     } 
 
