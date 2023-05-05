@@ -15,7 +15,6 @@ public class Study_13 {
         }        
         return count;
     } 
-
     public static void main(String[] args) {
         
         Study_13 kb = new Study_13();
