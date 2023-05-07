@@ -27,8 +27,6 @@ public class Study_13 {
         }
         int result =kb.solution(nums);
         sc.close();
-        System.out.println(result);
-        
-    }
-    
+        System.out.println(result);   
+    }   
 }
