@@ -43,6 +43,10 @@ public class Study6 {
             arr[i]=kb.nextInt();
 
         }
+
+        for(int x: st.solution(n, arr)){
+            System.out.print(x+" ");
+        }
         
     }
     
