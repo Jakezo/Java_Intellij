@@ -14,7 +14,6 @@ public class Study_sosu_back {
         }
         return true;
     }
-
     public ArrayList<Integer> solution(int n, int[] arr){
         ArrayList<Integer> answer = new ArrayList<>();
 
