@@ -47,4 +47,4 @@ public class Study_sosu_plus {
 	}
     }
     
-}
+
