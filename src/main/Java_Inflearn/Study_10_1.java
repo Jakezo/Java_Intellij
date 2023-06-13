@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Study_10_1 {
 
     public int[] solution(String s,char t){
-        
         int[] answer=new int[s.length()];
         int p=1000;
         for(int i=0; i<answer.length; i++){
