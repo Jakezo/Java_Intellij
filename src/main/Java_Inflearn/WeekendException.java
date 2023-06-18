@@ -14,7 +14,6 @@ public class WeekendException {
             if (dayOfWeek == DayOfWeek.FRIDAY || dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY|| exceptionDates.contains(currentDate)) {
                 throw new WeekendException2("6/14일 및  주말및 금요일에는 출석을 할 수 없습니다.");
             }else{
-
                 System.out.println("된다");
             }
         } catch (WeekendException2 e) {
