@@ -13,7 +13,6 @@ public class Study_sosu {
                 nums[j]=1;
             }
        }
-
         return cnt;
     }
     public static void main(String[] args) {
