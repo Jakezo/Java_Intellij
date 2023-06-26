@@ -13,7 +13,6 @@ public class Study_24_1 {
             a=b;
             b=c;
         }
-
     }
     public static void main(String[] args) {
      
