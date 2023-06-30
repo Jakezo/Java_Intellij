@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class CodeUp_pratice {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int male = 0;
         int feMale = 0;
 
