@@ -22,6 +22,9 @@ public class Study_02_10 {
 //                }
 //                System.out.println();
 //            } // 2차원 배열 뽑는거
+            int[] dx = {0, 0, -1, +1};
+            int[] dy = {-1, +1, 0, 0};
+
             for (int i = 0; i < n+2; i++) {
                 for (int j = 0; j < n+2; j++) {
                         if(arr[i][j]!=0){

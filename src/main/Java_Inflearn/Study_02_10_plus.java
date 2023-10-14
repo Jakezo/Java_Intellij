@@ -18,6 +18,10 @@ public class Study_02_10_plus {
                     int nx= i + dx[k];
                     int ny = j + dy[k];
                     if(nx >=0 && nx <n && ny >=0 && ny <n && arr[i][j] < arr[nx][ny]){
+                        // arr[nx][ny]상하좌우좌표 >= 현재지점좌표 arr[i][j]
+                        // nx>=0 && nx<n && ny>=0 && ny<n는
+                        // 내 상하좌우가 네방향으로 존재하지 않는 경우도 있으니 그 경우는 제외하는 조건
+                        // 현재지점 좌표보다 큰게 있으면 봉우리가 아니다. 이걸 확인하기 위해서 flag변수 작성해준 것
                         flag = false;
                         break;
                     }
