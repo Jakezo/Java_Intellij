@@ -21,6 +21,7 @@ public class Study_0212 {
             }
         }
         System.out.println(T.solution(n,m,arr));
+        sc.close();
 
     }
 
