@@ -27,7 +27,6 @@ public class Study_5_2 {
         for (char c : x.toCharArray()) {
             mapX.put(c, mapX.getOrDefault(c, 0) + 1);
         }
-
         for (char c : y.toCharArray()) {
             mapY.put(c, mapY.getOrDefault(c, 0) + 1);
         }
