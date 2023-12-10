@@ -27,9 +27,12 @@ public class Study_5_3 {
         lt=0;
         rt=lt+k-1;
 
-        HashMap<Character,Integer> map = new HashMap<>();
+        HashMap<Integer,Integer> map = new HashMap<>();
         //k 갯수만큼 돌리고
 
+        for (int i = 0; i < k; i++) {
+            map.put(arr[i], map.getOrDefault(arr[i],0)+1);
+        }
 
         return answer;
     }
