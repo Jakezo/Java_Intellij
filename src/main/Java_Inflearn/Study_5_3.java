@@ -16,22 +16,28 @@ public class Study_5_3 {
         }
 
         for (int i : T.solution(n,k,arr)) {
-            System.out.println(i+" ");
+            System.out.print(i+" ");
         }
         sc.close();
     }
 
     private ArrayList<Integer> solution(int n, int k, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();
-        int lt,rt;
-        lt=0;
-        rt=lt+k-1;
 
         HashMap<Integer,Integer> map = new HashMap<>();
         //k 갯수만큼 돌리고
 
-        for (int i = 0; i < k; i++) {
+        for (int i = 0; i < k-1; i++) {
             map.put(arr[i], map.getOrDefault(arr[i],0)+1);
+        }
+
+        int lt=0;
+        for(int rt=k-1; rt<n; rt++){
+            map.put(arr[rt], map.getOrDefault(arr[rt],0)+1);
+            answer.add(map.size());
+            map.put(arr[lt] ,map.get(arr[lt])-1);
+            if(arr[lt] == 0) map.remove(arr[lt]);
+            lt++;
         }
 
         return answer;
