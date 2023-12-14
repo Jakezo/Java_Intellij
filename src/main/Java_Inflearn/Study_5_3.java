@@ -30,7 +30,6 @@ public class Study_5_3 {
         for (int i = 0; i < k-1; i++) {
             map.put(arr[i], map.getOrDefault(arr[i],0)+1);
         }
-
         int lt=0;
         for(int rt=k-1; rt<n; rt++){
             map.put(arr[rt], map.getOrDefault(arr[rt],0)+1);
@@ -39,7 +38,6 @@ public class Study_5_3 {
             if(arr[lt] == 0) map.remove(arr[lt]);
             lt++;
         }
-
         return answer;
     }
 }
