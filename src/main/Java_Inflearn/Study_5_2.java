@@ -30,7 +30,6 @@ public class Study_5_2 {
         for (char c : y.toCharArray()) {
             mapY.put(c, mapY.getOrDefault(c, 0) + 1);
         }
-
 //        for (Character c : mapX.keySet()) {
 //           if(mapY.containsKey(c)){
 //               if(mapX.get(c) == mapY.get(c)){
