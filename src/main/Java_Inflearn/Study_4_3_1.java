@@ -34,7 +34,6 @@ public class Study_4_3_1 {
         for (int i = 0; i < k-1; i++) {
             hash.put(arr[i], hash.getOrDefault(arr[i], 0) + 1);
         }
-
         int lt=0;
         for (int rt = k-1; rt < n; rt++) {
             hash.put(arr[rt], hash.getOrDefault(arr[rt], 0)+1);
