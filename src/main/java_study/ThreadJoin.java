@@ -4,11 +4,9 @@ import java.util.ArrayList;
 
 public class ThreadJoin extends Thread{
     int seq;
-
     public ThreadJoin(int seq){
         this.seq = seq;
     }
-
     public void run(){
         System.out.println(this.seq+" thread start.");
         try {
