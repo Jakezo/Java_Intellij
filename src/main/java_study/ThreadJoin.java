@@ -15,7 +15,6 @@ public class ThreadJoin extends Thread{
         }
         System.out.println(this.seq+" thread end.");
     }
-
     public static void main(String[] args) {
         ArrayList<Thread> threads = new ArrayList<>();
         for(int i=0; i<10; i++) {
